@@ -1,6 +1,6 @@
 package com.omd.fp.pearls
 
-trait Surpassing {
+protected[pearls] trait Surpassing {
   protected type Count[A]  = (A, Int)
   protected type Counts[A] = List[Count[A]]
 
