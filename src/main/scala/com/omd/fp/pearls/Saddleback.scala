@@ -17,7 +17,7 @@ protected[pearls] trait Saddleback {
 
 
   //Dubbed saddle back search
-  final def find2(f: (Int, Int) ⇒ Int)(z: Int): List[(Int, Int)] = find1(List.empty)(0, z)(f)(z)
+  final def find2(f: (Int, Int) ⇒ Int)(z: Int): List[(Int, Int)] = find2(List.empty)(0, z)(f)(z)
 
   @tailrec
   private def find2(acc: List[(Int, Int)])(u: Int, v: Int)(f: (Int, Int) ⇒ Int)(z: Int): List[(Int, Int)] =
