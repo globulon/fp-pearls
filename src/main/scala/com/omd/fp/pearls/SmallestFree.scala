@@ -11,7 +11,8 @@ protected[pearls] trait SmallestFree {
     case (min, l, other) ⇒
       val b  = min + 1 + l / 2
       val (us, vs) = other.partition(_ < b)
-      if (b - min == us.length) minfrom(b, l - b + min, vs)
-      else minfrom(a, us.length, us)
+      val m = us.length
+      if (b - min == m) minfrom(b, l - m, vs)
+      else minfrom(a, m, us)
   }
 }
