@@ -1,4 +1,4 @@
-package com.omd.fp.pearls
+package fp.pearls
 
 import scala.annotation.tailrec
 
